@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <meta charset="utf-8">
+  <title>Μαίρη Γιάννακα</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head> 
+<BODY>
+ <div class="nav">
+     <label for="toggle">&#9776;</label>
+	 <input type="checkbox" id="toggle"/>
+	 <div class="menu">
+       <a href="index.html">Αρχική</a>
+       <a href="projects.html">Projects</a>
+       <a href="#" class="active">Επικοινωνία</a>
+	 </div>
+  </div>
+  <!-- MAIN (Center website) -->
+<div class="main">
+    
+   <header class="textstyle" style="color:gray;font-size:20px;line-height:50px;">ΕΠΙΚΟΙΝΩΝΙΑ</header>
+    <hr> 
+   <div class="por"> 
+
+ 
+  
+ <h3> Μπορείτε να επικοινωνήσετε μαζί μου με τους παρακάτω τρόπους:</h3>
+ <table class="center">
+  <tr>																						
+    <td class="left"> <b>Τηλέφωνο:</b></td>
+    <td class="right"><a href="tel:2231000000" style="font-size:18px">2231000000</a></td>
+  </tr>
+  <tr>
+    <td class="left"><b>e-mail:</b></td>
+    <td class="right"><a href="mailto:giannakamairh@gmail.com" style="font-size:18px">giannakamairh@gmail.com</a></td>
+  </tr>
+</table>
+ 
+ <br>
+ <hr>
+
+<center>
+<h3>Κάντε εγγραφή στο newsletter</h3>
+
+<div class="news">
+ 
+  <form action="welcome.php" method="post">
+    <label class="nl" for="name">Όνομα</label>
+    <input type="text" id="name" name="name" placeholder="Το όνομά σας...">
+<br>
+    <label class="nl" for="email">e-mail</label>
+    <input type="text" id="email" name="email" placeholder="Το e-mail σας...">
+<br>
+    <label class="nl" for="title">Ιδιότητα</label>
+    <select id="title" name="title">
+      <option value="Εκπαιδευτικός">Εκπαιδευτικός</option>
+      <option value="Μαθητής">Μαθητής</option>
+      <option value="Άλλο">Άλλο</option>
+    </select>
+<br>
+<br>
+    <input type="submit" value="Εγγραφή">
+  </form>
+</div>
+</center>
+  
+  
+  
+</div>
+
+</div>
+<div class="footer">THANK YOU</div>
+
+
+
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+ <!--gia to button-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

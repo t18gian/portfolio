@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <meta charset="utf-8">
+  <title>Μαίρη Γιάννακα</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" type="text/css" href="myprojects.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head> 
+<body>
+ <div class="nav">
+     <label for="toggle">&#9776;</label>
+	 <input type="checkbox" id="toggle"/>
+	 <div class="menu">
+       <a href="index.html">Αρχική</a>
+       <a href="#" class="active">Projects</a>
+       <a href="contact.html" >Επικοινωνία</a>
+     </div>
+ </div> 
+  
+ 
+  <!-- MAIN (Center website) -->
+ <div class="main">
+    
+    <header class="textstyle"  style="font-size:20px;line-height:50px;">PROJECTS</header>
+	<hr> 
+ 
+ <div class="row1">
+  <div class="column1 left1">
+    <div class="container">
+     <img src="bground-bw.jpg" alt="cover for 1st project"  class="image"> 
+      <div class="overlay">
+        <div class="text"><a class="proj" href="projects/project1/index.html">BLACK AND WHITE</a></div>
+      </div>
+    </div>
+   </div>
+ </div>
+ 
+  <div class="row1">
+  <div class="column1 right1">
+    <div class="container">
+     <img src="bground-nature.jpg" alt="cover for 2nd project" class="image"> 
+      <div class="overlay">
+        <div class="text"><a class="proj" href="projects/project2/index.html">OUT OF NATURE</a></div>
+      </div>
+    </div>
+   </div>
+ </div>
+ 
+  <div class="row1">
+  <div class="column1 left1">
+    <div class="container">
+     <img src="bground-color.jpg" alt="cover for 3rd project" class="image"> 
+      <div class="overlay">
+        <div class="text"><a class="proj" href="projects/project3/index.html">COLOR</a></div>
+      </div>
+    </div>
+   </div>
+ </div>
+ 
+ <div class="row1">
+  <div class="column1 right1">
+    <div class="container">
+     <img src="bground-film.jpg" alt="cover for 4th project"  class="image"> 
+      <div class="overlay">
+        <div class="text"><a class="proj" href="projects/project4/index.html">FILM</a></div>
+      </div>
+    </div>
+   </div>
+ </div>	
+  
+ 
+ <div class="footer" style="border-top:0;"></div>
+</div>
+<div class="footer"></div>
+ <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+ <!--gia to button-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!--gia to AUTOMATIC SLIDESHOW-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

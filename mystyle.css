@@ -1,0 +1,336 @@
+ 
+* {
+  box-sizing: border-box;
+}
+html,body {
+	width:100%;
+	height:100%;
+	margin:0;
+    letter-spacing:1.3px; 
+	/*background-image:url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+	 
+}
+ /*gradient background------------------------------------*/
+body {
+    background: linear-gradient(181deg, #b1e4d7, #c8dfd9, #d9c8df);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 58s ease infinite;
+    -moz-animation: AnimationName 58s ease infinite;
+    -o-animation: AnimationName 58s ease infinite;
+    animation: AnimationName 58s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+html{
+	font-family:helvetica neue, sans serif;
+}
+/*menu----------------------------------------------------------- */
+.nav{
+	width:100%;
+	top:0px;
+	border-bottom:0.5px solid #EAEAEB;
+	text-align:center;
+	height:auto;
+	line-height:60px;
+	margin-bottom:0;
+}
+.menu{
+	position:relative;
+	margin:0;
+	width: 100%;
+	text-align:center;
+	background-color: rgba(230,210,255,0.8); 
+	
+}
+
+.menu a{
+	text-decoration:none;
+	color:gray;
+	line-height:50px;
+	padding:20px;
+	font-size:20px;
+}
+ .nav label{
+	margin: 0 30px 0;
+	font-size:26px;
+	line-height:70px;
+	width:26px;
+	float:right;
+	display:none;
+}
+#toggle{
+	display:none;
+}
+.menu a:hover
+{  
+  color: rgba(0,0,0,1);
+  background-color:  rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+ 
+
+/*prosarmogh gia mikroteres othones*/
+@media only screen and  (max-width:780px){
+	.nav label{
+		display:block;
+		cursor:pointer;
+	    width:10px;
+	    float:right;
+		margin-left:0;
+	 
+	}
+	.menu{
+		background-color: rgba(230,210,255,1); 
+		width:100%;
+		display:none;
+		z-index:5;
+		padding-left:15%;
+	}
+	.menu a{
+		position:relative;
+		display:block; 
+		border-bottom:1px solid #EAEAEB;
+		margin:0;
+		text-align:left;
+		z-index:5;
+	}
+	
+	#toggle:checked + .menu {
+		display:block;
+	}
+	.textstyle{
+    text-align:right;
+	line-height:35px;
+	font-size:12px;
+    color:gray;	}
+	
+}  
+ 
+.textstyle{
+	text-align:right;
+	line-height:45px;
+	font-size:15px;
+    color:gray;	
+	}
+	 
+ 
+	
+.main{
+	position:relative;
+	max-width:85%;
+	margin-left:7.5%;
+	background-color:rgba(255,255,255,1);
+	overflow:hidden;
+}
+
+ 
+#aboutme{
+	max-width:100%;
+	position:relative;
+	background-color: rgba(230,210,255,0.8);
+    line-height:50px;	
+	margin-bottom:0;
+	margin-left:5px;
+}
+/* gia to "top" button */
+#myBtn {
+  
+  position: fixed;
+  height:50px;
+  width:30px;
+  text-align:center;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  font-size: 15px;
+  border: 2px;
+  outline: none;
+  background-color: rgba(250,250,250,1) ;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.footer{
+clear: both;
+margin:0; 
+padding:12px;
+background-color:rgba(200,170,220,0.5);
+border-top: 1px solid gray;
+width:100%;
+text-align:center;
+color:white;
+font-size:16px;
+	
+}
+	
+/* -------------------- gia to slider------------------------ */
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  left:5%;
+}
+  .por
+        {
+    width: 100%;
+    height: auto; 
+    text-align:center;
+    margin-left:auto;			
+        }
+
+
+.myDiv1 {
+  border: 0px outset black;
+  background-color: #b3b3b3;    
+  text-align: center;
+  color: white;
+  max-width:600px;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: static;
+  padding: 20px;
+}
+
+ 
+.news {
+  border-radius:10px;
+  background-color:#f2f2f2;
+  padding: 10px;
+  width:85%;
+  font-size: 14px;
+  color:black;
+  bottom:2%;
+  margin-bottom:3%;
+}
+
+input[type=text], select {
+  width: 60%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  margin-bottom:2%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width:100px;
+  background-color:rgba(100,70,180,1) ;
+  color: white;
+  padding: 15px 15px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(13,0,18,1) ;
+}
+
+.left{
+   position: relative;
+  right: 0px;
+  width: 40%;
+  padding: 15px;
+  text-align:right;
+}
+
+.right{ position:relative;
+  right: 0px;
+  width: 40%;
+  padding: 15px;
+  text-align:left;
+}
+.center{
+position:relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:4%;
+margin-bottom:2%;
+width:90%;
+padding-left:0;
+padding-right:10%;
+}
+ @media only screen and  (max-width:780px){
+	 .center{
+position:relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:8%;
+margin-bottom:4%;
+width:100%;
+padding-left:0.1%;
+padding-right:0.1%;
+}
+.left{
+  position: relative;
+  right:0px;
+  width:50%;
+  padding:10px;
+  text-align:right;
+}
+.right{
+  position: relative;
+  left: 0px;
+  width: 50%;
+  padding: 10px;
+  text-align:left;
+}
+}
